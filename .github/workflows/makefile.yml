@@ -20,3 +20,9 @@ jobs:
 
     - name: Make the pdf
       run: make
+
+    - name: Upload the PDF
+      uses: actions/upload-artifact@v4
+      with:
+        name: The ebook
+        path: software-testing-laboon-ebook.pdf
