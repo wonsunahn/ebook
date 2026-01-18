@@ -10,7 +10,10 @@ on:
 jobs:
   build:
 
-    runs-on: pandoc/latex:latest-ubuntu
+    runs-on: ubuntu-latest
+
+    container:
+      image: pandoc/latex:latest
     
     steps:
     - uses: actions/checkout@v4
