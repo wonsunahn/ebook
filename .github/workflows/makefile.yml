@@ -12,12 +12,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    container:
-      image: pandoc/latex:latest-ubuntu
-    
     steps:
     - name: Install necessary packages
-      run: apt-get update && apt-get -y install build-essential
+      run: apt-get update && apt-get -y install pandoc
            
     - uses: actions/checkout@v4
 
