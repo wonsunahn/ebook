@@ -16,6 +16,10 @@ jobs:
       image: pandoc/latex:latest
     
     steps:
+    - name: Install necessary packages
+      run: apt update
+           apt install build-essential
+           
     - uses: actions/checkout@v4
 
     - name: Make the pdf
