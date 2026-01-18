@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Install necessary packages
-      run: sudo apt-get update && sudo apt-get -y install pandoc pdflatex texlive-xetex
+      run: sudo apt-get update && sudo apt-get -y install pandoc texlive-latex-recommended texlive-fonts-recommended texlive-xetex
            
     - uses: actions/checkout@v4
 
